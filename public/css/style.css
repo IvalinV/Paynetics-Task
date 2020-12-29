@@ -1,0 +1,116 @@
+    #camera-video{
+      display: none;
+    }
+	
+	#camera-cropped-canvas{
+        width: 835px;
+        height: 835px;
+        float: left;
+        margin-right: 30px;
+    }
+
+    html, body{
+        margin: 0;
+        padding: 0;
+        background-color: #F9F8F8;
+    }
+    h2{
+        font-family: "Montserrat Alternates";
+        font-size: 1.5rem;
+    }
+    p{
+        font-family: "Montserrat Alternates";
+        font-size: .875rem;
+        opacity: .7;
+    }
+    aside{
+        width: 250px;
+        float: left;
+        padding: 0 30px;
+    }
+    aside ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    aside ul li {
+        margin-bottom: 15px;
+    }
+    aside ul li label{
+        opacity: .5;
+        border: 3px solid transparent;
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+    aside ul li label:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+    aside ul li label img{
+        width: 200px;
+    }
+    aside ul li input[type=radio]{
+        display: none;
+    }
+    .radio-custom:checked ~ label {
+        border-color: #2582D8;
+        opacity: 1;
+    }
+    main{
+        width: 75%;
+        float: left;
+        padding: 0 30px;
+    }
+    .video-wrap{
+        width: 500px;
+        float: left;
+        margin-right: 30px;
+    }
+
+    button{
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #2582D8;
+        color: #fff;
+        font-family: "Montserrat Alternates";
+        font-weight: 700;
+        font-size: 1.25rem;
+        border: none;
+        margin-top: 25px;
+    }
+    .result-wrap{
+        width: calc(100% - 530px);
+        float: left;
+    }
+    .result{
+        background-color: #fff;
+        border: 1px solid #c4c4c4;
+        border-radius: 10px;
+        min-height: 150px;
+    }
+    .result-wrap p{
+        margin: 50px 0;
+    }
+	
+#camera-cropped-canvas {
+    width: 835px;
+    height: 835px;
+    margin-bottom: 150px;
+    position: absolute;
+    top: -30px;
+    bottom: 30px;
+    left: 90px;
+}
+
+
+#loader {
+    width: 480px;
+    height: 440px;
+    position: absolute;
+    top: 60px;
+    bottom: 30px;
+	left: 260px;
+}

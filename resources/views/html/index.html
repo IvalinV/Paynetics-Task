@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            background-color: #F9F8F8;
+        }
+        h2{
+            font-family: "Montserrat Alternates";
+            font-size: 1.5rem;
+        }
+        p{
+            font-family: "Montserrat Alternates";
+            font-size: .875rem;
+            opacity: .7;
+        }
+        aside{
+            width: 250px;
+            float: left;
+            padding: 0 30px;
+        }
+        aside ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 15px;
+        }
+        aside ul li label{
+            opacity: .5;
+            border: 3px solid transparent;
+            width: 200px;
+            height: 200px;
+            display: block;
+        }
+        aside ul li label:hover{
+            opacity: 1;
+            cursor: pointer;
+        }
+        aside ul li label img{
+            width: 200px;
+        }
+        aside ul li input[type=radio]{
+            display: none;
+        }
+        .radio-custom:checked ~ label {
+            border-color: #2582D8;
+            opacity: 1;
+        }
+        main{
+            width: 75%;
+            float: left;
+            padding: 0 30px;
+        }
+        .video-wrap{
+            width: 500px;
+            float: left;
+            margin-right: 30px;
+        }
+        .video{
+            background-color: #212121;
+            width: 500px;
+            height: 500px;
+        }
+        button{
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            background-color: #2582D8;
+            color: #fff;
+            font-family: "Montserrat Alternates";
+            font-weight: 700;
+            font-size: 1.25rem;
+            border: none;
+            margin-top: 25px;
+        }
+        .result-wrap{
+            width: calc(100% - 530px);
+            float: left;
+        }
+        .result{
+            background-color: #fff;
+            border: 1px solid #c4c4c4;
+            border-radius: 10px;
+            min-height: 150px;
+        }
+        .result-wrap p{
+            margin: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <h2>Модел</h2>
+        <ul>
+            <li>
+                <input type="radio" id="first" value="first" checked class="radio-custom" name="model">
+                <label for="first">
+                    <img src="images/01.png" alt="">
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="second" value="second" class="radio-custom" name="model">
+                <label for="second">
+                    <img src="images/02.png" alt="">
+                </label>
+            </li>
+            <li>
+                <input type="radio" id="third" value="third" class="radio-custom" name="model">
+                <label for="third">
+                    <img src="images/03.png" alt="">
+                </label>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <div class="video-wrap">
+            <h2>Вход</h2>
+            <div class="video"></div>
+            <button type="submit">Преведи</button>
+        </div>
+        <div class="result-wrap">
+            <h2>Резултат</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci incidunt neque nostrum obcaecati quas quo voluptatem voluptates? Architecto delectus ducimus, eligendi maiores perferendis, quae quas quo repellat sapiente soluta totam?</p>
+            <p>Някакъв описателен текст за модела, проекта и т.н.</p>
+            <div class="result" id="result"></div>
+        </div>
+    </main>
+</body>
+</html>
